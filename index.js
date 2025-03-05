@@ -1,5 +1,6 @@
 const { Telegraf } = require('telegraf');
 const express = require('express');
+const path = require('path');
 
 // Ganti dengan token bot Telegram Anda
 const bot = new Telegraf('6749124349:AAESm-NbU9wEw0Zy1aRO_7wM1VQJOKY5lA8');
@@ -11,7 +12,7 @@ const chatId = '6538388688';
 const app = express();
 
 // Middleware untuk melayani file statis
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Endpoint untuk mengirim IP ke Telegram
 app.get('/', (req, res) => {
@@ -21,13 +22,13 @@ app.get('/', (req, res) => {
   bot.telegram.sendMessage(chatId, `IP yang mengakses: ${userIP}`);
   
   // Kirim halaman HTML ke browser
-  res.sendFile(__dirname + '/public/index.html');
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 // Start bot
 bot.launch();
 
-// Jalankan server pada port tertentu (Vercel biasanya menggunakan port 3000)
-app.listen(3000, () => {
-  console.log('Server berjalan pada http://localhost:3000');
+// Jalankan server pada port yang disediakan oleh Vercel
+app.listen(process.env.PORT || 3000, () => {
+  console.log('Server berjalan');
 });
