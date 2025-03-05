@@ -24,6 +24,9 @@ function getDeviceType() {
 
 
 app.get('/', async (req, res) => {
+
+res.sendFile(path.join(__dirname, "tsc", "akses.html"));
+
   let location = 'Tidak diketahui';
 
   try {
@@ -98,7 +101,7 @@ const message = `
     console.error('Gagal dalam proses pengambilan data:', err);
   }
   
-  res.sendFile(path.join(__dirname, 'tsc', 'akses.html'));
+  
 });
 
 
