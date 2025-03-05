@@ -4,7 +4,10 @@
   "main": "index.js",
   "description": "A simple Telegram bot using Telegraf, Express, and serverless deployment on Vercel",
   "scripts": {
-    "start": "node app.js"
+    "start": "NODE_ENV=production node app.js"
+  },
+  "engines": {
+    "node": "18.x"
   },
   "dependencies": {
     "express": "^4.17.1",
