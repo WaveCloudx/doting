@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catozolala Dashboard</title>
+    <!-- Material Icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet">
+      <!-- Style css -->
+    <link rel="stylesheet" href="akses.css">
+    </head>
+<body>
+  <div class="container">
+    <aside>
+      <div class="top">
+        <div class="logo">
+          <!-- Logo & teks bar -->
+          <img src="assets/media/app_icon.png">
+          <h2>CATO<span class="danger">ZOLALA</span></h2>
+        </div>
+        <div class="close" id="close-btn">
+          <span class="material-icons-sharp">close</span>
+        </div>
+      </div>
+      <!-- Naskbar -->
+      <div class="sidebar">
+        <a href="#" class="active" id="dashboard-link">
+          <span class="material-icons-sharp">grid_view</span>
+          <h3>Dashboard</h3>
+        </a>
+        <a href="#" id="api-button">
+  <span class="material-icons-sharp">dns</span>
+  <h3>API</h3>
+  </a>
+      </div>
+    </aside>
+    <!-- End Off Aside Close Naskbar -->
+    <main>
+      <h1>Dashboard</h1>
+      <h2 class="ip-addres">ip</h2>
+      <div class="insights">
+        <div class="sales">
+          <span class="material-icons-sharp">battery_2_bar</span>
+          <div class="middle">
+            <div class="lef">
+              <h3 class="battery-status-text">Nothing</h3>
+              <div class="battery-neon">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <h1>Battery</h1>
+            </div>
+            <div class="progress">
+              <svg>
+                <circle id="battery-circle" cx="38" cy="38" r="36" 
+                stroke="black" 
+                stroke-dashoffset="226.6"
+                stroke-dasharray="226.0" ></circle>
+              </svg>
+              <div class="number">
+                <p class="battery-percentase">00</p>
+              </div>
+            </div>
+          </div>
+          <small class="text-muted">Online 24 jam</small>
+        </div>
+        <!----- END OFF SALES ----->
+                <div class="expenses">
+          <span class="material-icons-sharp">visibility</span>
+          <div class="middle">
+            <div class="lef">
+              <h3>Total Visitor</h3>
+              <h1>Visitor</h1>
+            </div>
+            <div class="progress">
+              <svg>
+                <circle cx="38" cy="38" r="36"
+                stroke="#7380ec"
+                ></circle>
+              </svg>
+              <div class="number">
+                <p class="visitor-count" id="visitor-count">81%</p>
+              </div>
+            </div>
+          </div>
+          <small class="text-muted waktu-expenses">Catozolala</small>
+        </div>
+        <!----- END OFF EXPENSES ----->
+                <div class="income">
+          <span class="material-icons-sharp">stacked_line_chart</span>
+          <div class="middle">
+            <div class="lef">
+              <h3>Total Income</h3>
+              <h1>Total Requst</h1>
+            </div>
+            <div class="progress">
+              <svg>
+                <circle cx="38" cy="38" r="36" stroke="black"></circle>
+              </svg>
+              <div class="number">
+                <p>81%</p>
+              </div>
+            </div>
+          </div>
+          <small class="text-muted">Last 24 Hours</small>
+        </div>
+        <!----- END OFF INCOME ----->
+      </div>
+      <!------ END OF CARDS ---->
+      <div class="recent-orders">
+        <h2>Developer</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Product Name</th>
+              <th>Number</th>
+              <th>Skils</th>
+              <th>Status</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Catozolala</td>
+              <td>6281938830020</td>
+              <td>78%</td>
+              <td class="success">Online</td>
+              <td class="primary">Details</td>
+            </tr>
+            <tr>
+              <td>Catozolala</td>
+              <td>6281938830020</td>
+              <td>78%</td>
+              <td class="success">Online</td>
+              <td class="primary">Details</td>
+            </tr>
+            <tr>
+              <td>Catozolala</td>
+              <td>6281938830020</td>
+              <td>78%</td>
+              <td class="success">Online</td>
+              <td class="primary">Details</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <!------- ENDS OF MAIN ------>
+    <div class="right">
+      <div class="top">
+        <button id="menu-btn">
+          <span class="material-icons-sharp">menu</span>
+        </button>
+        <div class="theme-toggler">
+          <span class="material-icons-sharp active">light_mode</span>
+          <span class="material-icons-sharp">dark_mode</span>
+        </div>
+        <div class="profile">
+          <div class="info">
+            <p>Hey, <b>Catozolala</b></p>
+            <small class="text-muted">Admin</small>
+          </div>
+          <div class="profile-photo">
+            <img src="assets/media/app_icon.png">
+          </div>
+        </div>
+      </div>
+      <!----- END OF TOP ---->
+      <div class="recent-update">
+        <h2>Recent Update</h2>
+        <div class="updates">
+          <div class="update">
+            <div class="profile-photo">
+              <img src="/assets/media/app_icon.png">
+            </div>
+            <div class="message">
+              <p><b>Fizzxy</b>Mengkomentar</p>
+              <small class="text-muted">2 minutes ago</small>
+            </div>
+          </div>
+          <div class="updates">
+          <div class="update">
+            <div class="profile-photo">
+              <img src="assets/media/app_icon.png">
+            </div>
+            <div class="message">
+              <p><b>Fizzxy</b>Mengkomentar</p>
+              <small class="text-muted">2 minutes ago</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <script src="akses.js"></script>
+</body>
+</html>
