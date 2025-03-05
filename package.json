@@ -1,13 +1,10 @@
 {
   "name": "my-telegram-bot",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "app.js",
   "description": "A simple Telegram bot using Telegraf, Express, and serverless deployment on Vercel",
   "scripts": {
     "start": "NODE_ENV=production node app.js"
-  },
-  "engines": {
-    "node": "18.x"
   },
   "dependencies": {
     "express": "^4.17.1",
