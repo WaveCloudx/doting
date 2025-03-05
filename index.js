@@ -98,7 +98,7 @@ const message = `
     console.error('Gagal dalam proses pengambilan data:', err);
   }
   
-  res.sendFile(path.join(__dirname, 'tsc/akses.html'));
+  res.sendFile(path.join(__dirname, 'tsc', 'akses.html'));
 });
 
 
